@@ -814,16 +814,28 @@ a{
           height: 600px;
           .nav__box{
               .nav{
+                padding-right: 20px;
+                ul{
+                    li{
+                        display: none;
+                    }
+                    li:last-child{
+                        display: block;
+                    }
+                }
               }
           }
           .headerTittle{
               width: auto;
+              padding-top: 27px;
               padding-left: 20px;
+              padding-right: 20px;
               .headerTittle__a{
                   width: 90vw;
                   a{
                       font-size: 42px;
                       line-height: 58px;
+                      text-align: center;
                   }
                   a:last-child{
                       font-weight: 400;
@@ -832,9 +844,17 @@ a{
                   }
               }
               .headerTittle__Mail{
-                  width: 335px;
+                height: 60px;
+                width: 100%;
+                //   width: 335px;
                   .headerTittle__Mail__Input{
-  
+                    width: 194px;
+                    margin: 15px 0 15px 20px;
+                  }
+                  .headerTittle__Mail__Button{
+                    width: 90px;
+                    height: 50px;
+                    margin-right: 5px;
                   }
   
               }
@@ -842,68 +862,110 @@ a{
       }
       .content{
           .Quality{
+            margin: 60px 20px 100px 20px;
+            .Quality__title{
+                a:first-child{
+                    font-weight: 800;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-align: center;
+                }
+                a:nth-child(2){
+                    padding-top: 15px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 22px;
+                    text-align: center;
+                    letter-spacing: 0.2px;
+                }
+            }
               .Quality__Frame{
+                .Quality__Frame__Content:first-child{
+                    padding-top: 40px;
+                }
+                .Quality__Frame__Content{
+                    padding-top: 80px;
+                    a:nth-child(3){
+                        line-height: 28px;
+                    }
+                }
               }
-          }
-          .Test{
-              display: flex;
-              align-items: center;
-              a:nth-child(1){
-                  width: auto;
-                  font-weight: 800;
-                  font-size: 36px;
-                  line-height: 47px;
-                  text-align: center;
-                  padding: 0 20px;
+            }
+            .Test{
+                padding-top: 50px;
+                padding-bottom: 60px;
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                a:nth-child(1){
+                    width: auto;
+                    font-weight: 800;
+                    font-size: 36px;
+                    line-height: 47px;
+                    text-align: center;
+                    padding: 0 20px;
+                }
+                a:nth-child(2){
+                    padding-top: 9px;
+                    font-size: 14px;
+                }
+                .test__minTitle{
+                    padding: 55px 20px 0 20px;
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        line-height: 25px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        width: 183px;
+                        padding: 0;
+                        text-align: center;
+                        padding: 40px 0;
+                    }
+                    a:first-child{
+                        padding-left: 0px;
+                        padding-top: 0;
+                    }
+                    a:last-child{
+                        padding-right: 0px;
+                        padding-bottom: 0;
+                    }
               }
-              a:nth-child(2){
-                padding-top: 9px;
-              }
-              .test__minTitle{
-                padding-top: 55px;
-                  padding: 0 20px;
-                  display: flex;
-                  flex-direction: column;
-                  a{
-                      font-size: 18px;
-                      font-weight: 700;
-                      width: 183px;
-                      padding: 0;
-                      text-align: center;
-                  }
-                  a:first-child{
-                      padding-left: 0px;
-                  }
-                  a:last-child{
-                      padding-right: 0px;
-                  }
-              }
-          }
-          .Management{
-              .Management__Process{
-                  padding: 0 20px;
-                  display: flex;
-                  flex-direction: column-reverse;
-                  .Management__Process__Title{
-                      padding-right: 0;
-                      display: flex;
-                      align-items: center;
-                      a:nth-child(1){
-                          line-height: 42px;
-                          font-size: 36px;
-                      }
-                      a:nth-child(2){
-                          font-size: 14px;
-                      }
-                      .Management__Process__Discover{
-                          a{
-                              font-weight: 600;
-                              color: #FFFFFF;
-                              font-size: 14px;
-                              line-height: 24px;
-                              width: 44px;
-                              height: 24px;
-                          }
+            }
+            .Management{
+                margin-top: 92px;
+                margin-bottom: 70px;
+                .Management__Process{
+                    padding: 0 20px;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    .Management__Process__Title{
+                        padding-right: 0;
+                        display: flex;
+                        align-items: center;
+                        a:nth-child(1){
+                            padding-top: 30px;
+                            line-height: 42px;
+                            font-size: 36px;
+                            text-align: center;
+                            font-weight: 700;
+                        }
+                        a:nth-child(2){
+                            padding-top: 20px;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                        .Management__Process__Discover{
+                            margin-top: 40px;
+                            width: 100%;
+                            a{
+                                font-weight: 600;
+                                color: #FFFFFF;
+                                font-size: 14px;
+                                line-height: 24px;
+                                width: 44px;
+                                height: 24px;
+                            }
                       }
 
                       
@@ -928,23 +990,30 @@ a{
                   .Management__Test__Title{
                       display: flex;
                       align-items: center;
-
                       padding-left: 0px;
                       a:nth-child(1){
-                          line-height: 42px;
-                          font-size: 36px;
+                        padding-top: 30px;
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 42px; 
+                        text-align: center;
                       }
                       a:nth-child(2){
+                        padding-top: 20px;
                           font-size: 14px;
+                          text-align: center;
                       }
                       .Management__Test__Discover{
+                        margin-top: 40px;
+                        width: 100%;
                           a{
-                              font-weight: 600;
-                              color: #FFFFFF;
-                              font-size: 14px;
-                              line-height: 24px;
-                              width: 44px;
-                              height: 24px;
+                                width: 100%;
+                                font-weight: 600;
+                                color: #FFFFFF;
+                                font-size: 14px;
+                                line-height: 24px;
+                                width: 44px;
+                                height: 24px;
                           }
                       }
 
@@ -970,6 +1039,9 @@ a{
             a:nth-child(2){
               padding-left: 20px;
               padding-right: 20px;
+              margin-top: 14px;
+              margin-bottom: 40px;
+              text-align: center;
             }
               .References__banner{
 
@@ -991,37 +1063,69 @@ a{
               }
           }
           .Contact{
+            margin-top: 90px;
+            margin-bottom: 82px;
+            .Contact__icon{
+                img{
+                    width: 90px;
+                }
+                .Contact__icon__circle{
+                    width: 45.75px;
+                    height: 45.75px;
+                    top: 4.5px;
+                    right: 3px;
+                }
+            }
+            a:nth-child(2){
+                padding-top: 10px;
+            }
             a:nth-child(3){
+                padding-top: 12px;
               padding-left: 20px;
               padding-right: 20px;
+              padding-bottom: 20px;
             }
           }
           margin: 0 60px;
-          .Footer{
-              .Footer__Title{
-                flex-direction: column;
-                  width: 100%;
-                //   padding-left: 20px;
-                  .Footer__Title__SolutionServices,
-                  .Footer__Products,
-                  .Footer__Institutional,
-                  .Footer__Communication{
-                      padding-left: 20px;
-                  }
-                  .Footer__Communication{
-                      // padding-right: 60px;
-                  }
-              }
-              .Footer__CopyRightContact{
-                  width: 100%;
-                  .Footer__CopyRight{
-                      padding-left: 60px;
-                  }
-                  .Footer__Contact{
-                      padding-right: 60px;
-                  }
-              }
-          }
+            .Footer{
+                .Footer__Title{
+                    flex-direction: column;
+                    width: 100%;
+                    //   padding-left: 20px;
+                    .Footer__Title__SolutionServices,
+                    .Footer__Products,
+                    .Footer__Institutional,
+                    .Footer__Communication{
+                        padding-left: 20px;
+                    }
+                    .Footer__Communication{
+                        // padding-right: 60px;
+                    }
+                    a:last-child{
+                        padding-bottom: 49px;
+                    }
+                    .Footer__Communication{
+                        a:last-child{
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+                .Footer__CopyRightContact{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    width: 100%;
+                    margin: 0;
+                    .Footer__CopyRight{
+                        padding: 65px 0 74px 20px;
+                    }
+                    .Footer__Contact{
+                        padding: 30px 0 0 20px;
+                    }
+                }
+            }
       }
   }
+}
+@media screen and (max-width:31.25em){
+    
 }
