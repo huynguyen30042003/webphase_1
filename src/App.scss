@@ -378,7 +378,6 @@ a{
               .References__banner__col:first-child,
               .References__banner__col:last-child{
                   width: 170px;
-                  height: 96px;
               }
               .References__banner__col:first-child{
                   padding-left: 0;
@@ -1053,19 +1052,24 @@ a{
             }
               .References__banner{
 
-                  flex-direction: column;  
-                  .References__banner__col{
-                      padding: 0 10px;
-                  }
-                  .References__banner__col:first-child {
-                      padding-left: 10px;
-                  }
+                    flex-direction: column;  
+                    .References__banner__col{
+                        padding: 0 10px;
+                    }
+                    .References__banner__col:first-child {
+                        padding-left: 10px;
+                        display: none;
+                    }
+                    .References__banner__col:nth-child(2) {
+                        display: block;
+                }
                   .References__banner__col:nth-child(3){
                       .References__banner__col__img:nth-child(1){
                           margin-top: 24px;
                       }
                   }
                   .References__banner__col:last-child {
+                    display: none;
                     padding-top: 24px;
                   }
               }
