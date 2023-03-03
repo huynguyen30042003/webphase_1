@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+  }
 *{
   margin: 0;
   padding: 0;
@@ -61,6 +63,7 @@ a{
       }
 
       .headerTittle{
+        padding-top: 90px;
          width: 1200px;
           justify-content: center;
           display: flex;
@@ -540,6 +543,7 @@ a{
               }
           }
           .headerTittle{
+            padding-top: 40px;
               width: 600px;
               padding-left: 60px;
               .headerTittle__a{

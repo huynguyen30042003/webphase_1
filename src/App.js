@@ -1,4 +1,6 @@
 import './App.scss';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 import Rectangle1 from "./img/Rectangle1.png"
 import File from "./img/File.svg"
 import Star from "./img/Star.svg"
@@ -24,13 +26,14 @@ import LinkedinLogo from "./img/LinkedinLogo.svg"
 import TwitterLogo from "./img/TwitterLogo.svg"
 import InstagramLogo from "./img/InstagramLogo.svg"
 import FacebookLogo from "./img/FacebookLogo.svg"
+import List from "./img/List.svg"
 import React from 'react';
 
 function App() {
   return (
     <>
       <div className='main'>
-        <div className='header'>
+        <div id='header' className='header' data-aos="fade-up">
           <div className='nav__box'>
             <div className='nav'>
               <ul>
@@ -57,7 +60,7 @@ function App() {
           </div>
         </div>
         <div className='content'>
-          <div className='Quality'>
+          <div  className='Quality' data-aos="fade-up">
             <div className='Quality__title'>
               <a>Kalite ve Süreç Yönetimi</a>
               <a>Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.</a>
@@ -99,7 +102,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='Test'>
+          <div className='Test' data-aos="fade-up">
             <a>Test Yönetimiyle Neler Sağlıyoruz?</a>
             <a>IoT Destekli Çözümler</a>
             <div className='test__minTitle'>
@@ -112,7 +115,7 @@ function App() {
               <a>Zaman ve Maliyetten Tasarruf Sağlıyoruz</a>
             </div>
           </div>
-          <div className='Management'>
+          <div className='Management' data-aos="fade-up">
             <div className='Management__Process'>
               <div className='Management__Process__Title'>
                 <a>Kalite ve Süreç Yönetimi</a>
@@ -138,7 +141,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='References'>
+          <div className='References' data-aos="fade-up">
             <a>Referanslarımız</a>
             <a>Bize güvenen ve beraber çalıştığımız iş ortaklarımız</a>
             <div className='References__banner'>
@@ -178,7 +181,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='Contact'>
+          <div className='Contact' data-aos="fade-up">
             <div className='Contact__icon'>
               <img src={Users}>
               </img>
@@ -190,7 +193,7 @@ function App() {
               <a>Bize Ulaşın</a>
             </button>
           </div>
-          <div className='Footer'>
+          <div className='Footer' data-aos="fade-up">
             <div className='Footer__Title'>
               <div className='Footer__Title__SolutionServices'>
                 <a>Çözüm ve Hizmetler</a>
