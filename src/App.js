@@ -46,14 +46,14 @@ function App() {
               </ul>
             </div>
           </div>
-          <div className='headerTittle'>
-            <div className='headerTittle__a'>
+          <div className='header__title'>
+            <div className='header__title__a'>
               <a>Bilgi Teknolojilerinde 23 Yıllık Tecrübe</a>
               <a>Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.</a>
             </div>
-            <div className='headerTittle__Mail'>
-              <input type="text" className='headerTittle__Mail__Input' placeholder='Mail bültenimize kayıt ol'></input>
-              <button className='headerTittle__Mail__Button'>
+            <div className='header__title__Mail'>
+              <input type="text" className='header__title__Mail__Input' placeholder='Mail bültenimize kayıt ol'></input>
+              <button className='header__title__Mail__Button'>
                 <a>Kayıt Ol</a>
               </button>
             </div>
