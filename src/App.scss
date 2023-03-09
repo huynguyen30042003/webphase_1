@@ -230,10 +230,10 @@ a{
                 max-width: 100%;
             }
             a:first-child{
-                padding-left: 0;
+                padding-left: 63px;
             }
             a:last-child{
-                padding-right: 0;
+                padding-right: 63px;
             }
         }
     }
@@ -589,6 +589,12 @@ a{
                     padding: 0 28px;
                     font-size: 14px;
                 }
+                a:first-child{
+                    padding-left: 0;
+                }
+                a:last-child{
+                    padding-right: 0;
+                }
             }
         }
         .Management{
@@ -710,7 +716,9 @@ a{
     }
 }
 }
-@media (min-width:46.25em)and (max-width:63.9375em){
+// @media (min-width:46.25em)and (max-width:63.9375em){
+@media (min-width:40em)and (max-width:63.9375em){
+
 .main{
     .header{
         background-size:cover;
@@ -829,7 +837,8 @@ a{
     }
 }
 } 
-@media (min-width:10em)and (max-width:46.25em){
+// @media (min-width:10em)and (max-width:46.25em){
+@media (min-width:10em)and (max-width:40em){
 .main{
     .header{
         height: 600px;
