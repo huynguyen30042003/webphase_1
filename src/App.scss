@@ -34,10 +34,14 @@ a{
                 align-items: center;
                 justify-content: end;
                 // padding-right: 140px;
+                img{
+                    display: none;
+                }
                 ul{
                     display: flex;
                     list-style: none;
                     align-items: center;
+                    padding-left: 40px;
                     li{
                         display: flex;
                         align-items: center;
@@ -50,7 +54,7 @@ a{
                         }
                     }
                     li:first-child {
-                        padding-left: 0;
+                        padding-left: 0px;
                     }
                     li:last-child{
                         width: 51px;
@@ -737,8 +741,27 @@ a{
         // padding-left: calc(5/6);
         align-items:normal;
         .nav__box{
-            // display: none;
+            width: 100%;
+            position: relative;
             .nav{
+                // position: absolute;
+                // display: block;
+                padding:0 60px;
+                img{
+                    position: absolute;
+                    display: block;
+                    left: 60px;
+                }
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        display: none;
+                    }
+                    li:last-child{
+                        display: block;
+                    }
+                }
             }
         }
         .header__title{
@@ -854,9 +877,20 @@ a{
     .header{
         height: 600px;
         .nav__box{
+            width: 100%;
+            position: relative;
             .nav{
-                padding-right: 20px;
+                // position: absolute;
+                // display: block;
+                padding:0 20px;
+                img{
+                    position: absolute;
+                    display: block;
+                    left: 20px;
+                }
                 ul{
+                    display: flex;
+                    justify-content: space-between;
                     li{
                         display: none;
                     }
@@ -892,11 +926,13 @@ a{
                 .header__title__Mail__Input{
                     width: 194px;
                     margin: 15px 0 15px 20px;
+                    font-size: 14px;
                 }
                 .header__title__Mail__Button{
                     width: 90px;
                     height: 50px;
                     margin-right: 5px;
+
                 }
 
             }
