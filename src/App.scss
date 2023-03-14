@@ -98,7 +98,7 @@ a{
             .header__title__Mail{
                 margin-top: 50px;
                 width: 502px;
-                height: 71px;
+                height: 72px;
                 background-color:#FFFFFF;
                 border-radius: 8px;
                 display: flex;
@@ -234,6 +234,7 @@ a{
             align-items: center;
             flex-direction: row;
             a{
+                text-align: start;
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 31px; 
@@ -418,7 +419,7 @@ a{
                 width: 61px;
                 border-radius: 50%;
                 height: 61px;
-                background-color: red;
+                background-color: #F84646;
                 top: 6px;right: 4px;
                 z-index: -1;
             }
@@ -428,12 +429,14 @@ a{
             font-size: 48px;
             font-weight: 800;
             padding-top: 10px;
+            line-height: 32px;
         }
         a:nth-child(3){
             padding-top: 20px;
             padding-bottom: 30px;
             font-weight: 500;
             font-size: 18px;
+            line-height: 32px;
         }
         .Contact__Button {
             border: 0;
@@ -487,11 +490,14 @@ a{
             //     font-weight: 700;
             // }
             a:nth-child(1){
+                line-height: 24px;
+                color: #fff;
                 font-weight: 700;
                 padding-top: 0;
             }
             a{
                 max-width: 100%;
+                line-height: 32px;
                 padding: 12px 0;
                 color: #E6E6E6;
             }
@@ -500,12 +506,13 @@ a{
             display: flex;
             justify-content: space-between;
             width: 1200px;
-            margin-top: 50px;
+            margin-top: 38px;
             margin-bottom: 70px;
             .Footer__CopyRight{
                 a{
                     font-size: 16px;
                     color: #fff;
+                    line-height: 32px;
                 }
             }
             .Footer__Contact{
@@ -550,12 +557,12 @@ a{
         .nav__box{
             width: 100%;
             .nav{
-                padding-right: 60px;
+                padding-right: 40px;
                 max-width: 1200px;
             }
         }
         .header__title{
-            padding-top: 40px;
+            padding-top: 51px;
             width: 600px;
             padding-left: 60px;
             .header__title__a{
@@ -574,7 +581,10 @@ a{
                 margin-top: 20px;
                 width: 422px;
                 .header__title__Mail__Input{
-
+                    
+                }
+                .header__title__Mail__Button{
+                    width: 114px;
                 }
 
             }
@@ -622,6 +632,7 @@ a{
                     padding-right: 52px;
                     a:nth-child(1){
                         font-size: 58px;
+                        line-height: 60px;
                     }
                     a:nth-child(2){
                         padding-top: 20px;
@@ -686,6 +697,9 @@ a{
                     }
                 }
             }
+        }
+        .References{
+            padding: 45px 0 85px 0;
         }
         margin: 0 60px;
         .Footer{
@@ -1159,7 +1173,7 @@ a{
                     }
                     .References__banner__col:first-child {
                         padding-left: 10px;
-                        display: none;
+                        // display: none;npm
                     }
                     .References__banner__col:nth-child(2) {
                         display: block;
