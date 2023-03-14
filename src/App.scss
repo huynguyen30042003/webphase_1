@@ -171,12 +171,11 @@ a{
             }
         }
         .Quality__Frame{
-            margin-top: 5px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             .Quality__Frame__Content{
-                padding-top: 85px;
+                padding-top: 90px;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
@@ -596,11 +595,28 @@ a{
             margin: 120px 60px ;
             .Quality__Frame{
                 justify-content: center;
-                .Quality__Frame__Content:nth-child(2n){
-                    padding-left: 47px;
+                padding-top: 90px;
+                .Quality__Frame__Content{
+                    padding: 0 47px;
                 }
-                .Quality__Frame__Content:nth-child(2n+1){
-                    padding-right: 47px;
+
+                .Quality__Frame__Content:nth-child(1){
+                    order: 1;
+                }
+                .Quality__Frame__Content:nth-child(2){
+                    order: 2;
+                }
+                .Quality__Frame__Content:nth-child(3){
+                    order: 5;
+                }
+                .Quality__Frame__Content:nth-child(4){
+                    order: 3;
+                }
+                .Quality__Frame__Content:nth-child(5){
+                    order: 4;
+                }
+                .Quality__Frame__Content:nth-child(6){
+                    order: 6;
                 }
             }
         }
@@ -797,11 +813,14 @@ a{
     .content{
         .Quality{
             .Quality__Frame{
+                padding-top: 0;
                 .Quality__Frame__Content:nth-child(2n){
                     padding-left: 0;
+                    padding-right: 0;
                 }
                 .Quality__Frame__Content:nth-child(2n+1){
                     padding-right: 0;
+                    padding-left: 0;
                 }
             }
         }
@@ -990,11 +1009,14 @@ a{
                 }
             }
             .Quality__Frame{
+                padding-top: 0;
                 .Quality__Frame__Content:nth-child(2n){
                     padding-left: 0;
+                    padding-right: 0;
                 }
                 .Quality__Frame__Content:nth-child(2n+1){
                     padding-right: 0;
+                    padding-left: 0;
                 }
                 .Quality__Frame__Content:first-child{
                     padding-top: 40px;
@@ -1007,6 +1029,24 @@ a{
                     a:nth-child(3){
                         line-height: 28px;
                     }
+                }
+                .Quality__Frame__Content:nth-child(1){
+                    order: 1;
+                }
+                .Quality__Frame__Content:nth-child(2){
+                    order: 2;
+                }
+                .Quality__Frame__Content:nth-child(3){
+                    order: 6;
+                }
+                .Quality__Frame__Content:nth-child(4){
+                    order: 4;
+                }
+                .Quality__Frame__Content:nth-child(5){
+                    order: 5;
+                }
+                .Quality__Frame__Content:nth-child(6){
+                    order: 3;
                 }
             }
             }

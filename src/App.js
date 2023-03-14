@@ -171,7 +171,7 @@ function App() {
               <div className='References__banner__col'>
               <div className='References__banner__col__img'>
                 <img src={OYOLogo}></img>
-              </div>
+              </div> 
               <div className='References__banner__col__img'>
                 <img src={OLALogo}></img>
               </div>
