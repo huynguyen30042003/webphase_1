@@ -1138,6 +1138,9 @@ a{
                         padding-right: 0px;
                         padding-bottom: 0;
                     }
+                    img{
+                        rotate: 90deg;
+                    }
             }
             }
             .Management{
@@ -1359,7 +1362,4 @@ a{
             }
     }
 }
-}
-@media screen and (max-width:31.25em){
-    
 }
